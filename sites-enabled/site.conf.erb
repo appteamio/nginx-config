@@ -1,7 +1,7 @@
 upstream <%= node['app'] %> { server 127.0.0.1:8080 fail_timeout=0; }
 server {
         listen   80;
-        root /var/www/<%= node['app'] %>/public;
+        root /var/www/public/<%= node['app'] %>;
         server_name <%= node['app'] %>.com;
         index index.php index.htm index.html;
 
