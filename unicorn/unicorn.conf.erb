@@ -1,7 +1,7 @@
 listen "127.0.0.1:8080"
 worker_processes 4
 user "vagrant"
-working_directory "/var/www/current/<%= @site_name %>"
-pid "/var/www/unicorn/pids/<%= @site_name %>.pid"
+working_directory "/var/www/current/<%= @app %>"
+pid "/var/www/unicorn/pids/<%= @app %>.pid"
 stderr_path "/var/www/unicorn/log/unicorn_err.log"
 stdout_path "/var/www/unicorn/log/unicorn_out.log"
